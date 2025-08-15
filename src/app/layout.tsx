@@ -22,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <NuqsAdapter>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body
           className={`${inter.className} antialiased`}
+          suppressHydrationWarning={true}
         >
           <Toaster />
           {children}
